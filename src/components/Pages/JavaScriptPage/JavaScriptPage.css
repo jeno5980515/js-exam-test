@@ -1,0 +1,94 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  /* white-space: nowrap; */
+  overflow: hidden;
+}
+
+.input-panel {
+  display: block;
+  width: 50%;
+  min-width: 150px;
+  max-width: 60%;
+  height: 100%;
+  padding-right: 10px; 
+  float: left;
+  cursor: col-resize;
+}
+
+.code-panel {
+  display: block;
+  width: 100% !important;
+  min-height: 100px;
+  max-height: 550px;
+  /* height: 50% !important; */
+}
+
+.control-panel {
+  display: block;
+  width: 100% !important;
+  min-height: 100px;
+  max-height: 550px;
+}
+
+.border.code-panel, .border.control-panel {
+  padding-bottom: 10px;
+  cursor: row-resize;
+}
+
+.control-panel > div {
+  background: white;
+  overflow: scroll;
+  height: 100%;
+}
+
+.code-panel > div, .test-panel > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.test-panel {
+  display: block;
+  width: 100% !important;
+  height: 100vh;
+  /* height: 50% !important; */
+}
+
+.test-panel > div {
+  height: 100% !important;
+}
+
+.result-panel {
+  display: block;
+  overflow: hidden;
+}
+
+.bottom-panel {
+  overflow: scroll;
+}
+
+.syntax-error {
+  color: red;
+  align-self: center;
+}
+
+#tests {
+  flex: 1;
+  margin-bottom: 0 !important;
+}
+
+#tests > div {
+  margin-top: -1px;
+}
+
+.ace_layer {
+  height: 100% !important;
+}
+
+.border {
+  background: #E0E0E0;
+}
+
+.border > div {
+  border-right: 1px solid #E0E0E0;
+}

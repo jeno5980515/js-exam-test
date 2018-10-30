@@ -1,20 +1,20 @@
-export function changeCode({ compiledCode , rawCode }) {
+export function changeCode({ compiledCode, rawCode, type }) {
   return {
-    type: 'CODE/CHANGE',
-    compiledCode ,
-    rawCode 
+    type: `${type}/CODE/CHANGE`,
+    compiledCode,
+    rawCode
   };
 }
 
-export function changeQuestion(index) {
+export function changeQuestion({ index, type }) {
   return {
-    type: 'QUESTION/CHANGE',
+    type: `${type}/QUESTION/CHANGE`,
     index
   };
 }
 
-export function resetQuestion(index) {
+export function resetQuestion({ type }) {
   return {
-    type: 'QUESTION/RESET'
+    type: `${type}/QUESTION/RESET`
   };
 }

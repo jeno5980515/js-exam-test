@@ -1,7 +1,7 @@
-const _console = (state = [], action) => {
-  switch(action.type) {
+const Console = (state = [], action) => {
+  switch (action.type) {
     case 'CONSOLE/RESET':
-      return [] ;
+      return [];
     case 'CONSOLE/ADD':
       return [
         ...state,
@@ -9,10 +9,10 @@ const _console = (state = [], action) => {
           key: action.key,
           args: action.args
         }
-      ]
+      ];
     default:
       return state;
   }
 };
 
-export default _console;
+export default Console;

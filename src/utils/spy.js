@@ -15,6 +15,6 @@ const spy = (obj, methodName) => {
     callCount: () => callHistory.length,
     restore: () => (obj[methodName] = origFn)
   };
-}
+};
 
 export default spy;

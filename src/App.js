@@ -1,22 +1,17 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect
-} from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import LoginPage from 'components/Pages/LoginPage';
+import Page from 'components/Pages/Page';
 
-import MainPage from './components/MainPage/';
-import LoginPage from './components/LoginPage';
-import ReactPage from './components/ReactPage';
+const { PUBLIC_URL } = process.env;
 
 const App = () => (
-  <Router>
+  <Router basename={PUBLIC_URL}>
     <div>
-      <Route exact path="/" component={MainPage} />
-      <Route path="/react" component={ReactPage} />
-      <Route path="/login" component={LoginPage} />
+      <Route exact path="/" component={Page} />
+      <Route exact path="/login" component={LoginPage} />
     </div>
   </Router>
-)
+);
 
 export default App;

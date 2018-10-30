@@ -2,11 +2,15 @@
   "name": "js-exam",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jeno5980515.github.io/js-exam/",
   "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "node-sass": "^4.9.4",
     "react-scripts": "2.0.5"
   },
   "dependencies": {
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@babel/standalone": "^7.1.0",
     "antd": "^3.10.2",
     "blueimp-md5": "^2.10.0",
     "brace": "^0.11.1",
