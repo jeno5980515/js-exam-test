@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "eslint-config-airbnb": "^17.1.0",
-    "node-sass": "^4.9.4",
+    "node-sass": "^7.0.0",
     "react-scripts": "2.0.5"
   },
   "dependencies": {
